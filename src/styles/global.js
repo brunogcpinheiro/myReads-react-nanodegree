@@ -9,6 +9,6 @@ injectGlobal`
   }
 
   body {
-    background-color: #2f3640;
+    background-color: #353b48;
   }
 `;
