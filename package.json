@@ -1,7 +1,7 @@
 {
-  "name": "new",
+  "name": "myreads",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Nanodegree",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
