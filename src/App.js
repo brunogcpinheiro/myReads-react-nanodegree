@@ -9,8 +9,7 @@ import * as BooksAPI from "./utils/BooksAPI";
 
 class App extends Component {
   state = {
-    books: [],
-    shelf: "currently"
+    books: []
   };
 
   componentDidMount() {
@@ -18,6 +17,7 @@ class App extends Component {
       this.setState(() => ({
         books
       }));
+      console.log(books);
     });
   }
 
@@ -32,11 +32,17 @@ class App extends Component {
             <div>
               <Header />
               <Heading>Currently Reading</Heading>
-              <ListBooks books={books} shelf={currently} />
+              {books.filter(book => book.shelf === "currentlyReading") && (
+                <ListBooks books={books} shelf={currently} />
+              )}
               <Heading>Want To Read</Heading>
-              <ListBooks books={books} shelf={currently} />
+              {books.filter(book => book.shelf === "wantToRead") && (
+                <ListBooks books={books} shelf={currently} />
+              )}
               <Heading>Read</Heading>
-              <ListBooks books={books} shelf={currently} />
+              {books.filter(book => book.shelf === "read") && (
+                <ListBooks books={books} shelf={currently} />
+              )}
             </div>
           )}
         />
