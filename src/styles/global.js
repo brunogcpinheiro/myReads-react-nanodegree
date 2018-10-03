@@ -6,6 +6,7 @@ injectGlobal`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
+    outline: none;
   }
 
   body {

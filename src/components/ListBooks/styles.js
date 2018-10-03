@@ -4,6 +4,7 @@ export const Shelf = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: wrap;
   padding: 0 50px;
   margin-bottom: 20px;
   
@@ -32,4 +33,17 @@ export const Desc = styled.div`
     color: grey;
     font-size: 0.7em;
   }
+`;
+
+export const Button = styled.button`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #2ed573;
+  border: none;
+  background-image: url('');
+  cursor: pointer;
 `;
